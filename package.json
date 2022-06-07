@@ -1,0 +1,21 @@
+{
+  "name": "template-renderer",
+  "version": "1.0.0",
+  "description": "Server side template renderer",
+  "type": "module",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "author": "Serhat",
+  "scripts": {
+    "build": "esbuild --bundle --sourcemap --outdir=dist ./src/index.js",
+    "dev": "miniflare --watch --debug",
+    "test": "npm run build && ava --verbose test/*.spec.js"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.11.0",
+    "ava": "^3.15.0",
+    "esbuild": "^0.14.42",
+    "miniflare": "^2.5.0",
+    "wrangler": "^2.0.7"
+  }
+}

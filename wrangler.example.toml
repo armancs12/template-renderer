@@ -1,0 +1,8 @@
+name = "template-renderer"
+account_id = ""
+workers_dev = true
+compatibility_date = "2022-06-03"
+main = "dist\\index.js"
+
+[build]
+command = "npm run build"
